@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= render 'layouts/header'%>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <h1><a href="index.html">VTest</a></h1>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href=""><%= t("activerecord.welcome.nav_bar_home")%></a></li>
+          <li><%= link_to 'Post', posts_path %></li>
+          <li> <%= link_to "english", :controller => 'welcome', :action => 'index', :locale => 'en' %></li>
+          <li> <%= link_to "french", :controller => 'welcome', :action => 'index', :locale => 'fr' %></li>
+          <li><%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="nav-link scrollto"></i> <%= t("activerecord.welcome.nav_bar_logout")%>
+          <% end %></li>
+        </ul>
+
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1><%= t("activerecord.welcome.what_we_do8")%> <span>Vtest</span></h1>
+      <h2><%= t("activerecord.welcome.message")%></h2>
+      <a href="#about" class="btn-get-started scrollto"><%= t("activerecord.welcome.what_we_do9")%></a>
+    </div>
+  </section>
+  <%= render 'layouts/about_section'%>
+  <%= render 'layouts/footer' %> 
+</body>
+</html>

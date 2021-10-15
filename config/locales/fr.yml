@@ -1,0 +1,23 @@
+fr: 
+  activerecord:
+    welcome:
+      message: "Nous sommes une équipe de designers talentueux créant des sites Web"
+      what_we_do: "Il faut beaucoup de peine pour prendre l'avantage sur quelque chose"
+      what_we_do2: "Pour apaiser et corrompre les plaisirs, quelles douleurs et quels ennuis ils recevront"
+      what_we_do3: "La douleur condamnera au plaisir"
+      what_we_do4: "Ce sont des exceptions qui ont soif de noirs, ils ne voient pas, ce sont eux qui sont fautifs pour leurs services"
+      what_we_do5: "Grandes douleurs"
+      what_we_do6: "Mais comme vous l'observez"
+      what_we_do7: "Ce que nous faisons"
+      what_we_do8: "Bienvenue à"
+      what_we_do9: "Commencer"
+      about_us: "À propos de nous"
+      about_us1: "La douleur elle-même peut être très douloureuse, mais la raison principale est la douleur, mais je lui laisse le temps d'y tomber comme une grande douleur et une grande douleur."
+      about_us2: "Aucun bureau ne peut fonctionner que pour en atteindre les objectifs."
+      about_us3: "Les plaisirs du corps assis"
+      about_us4: "Les résultats résultent soit de l'un de ces objectifs d'emploi résultants"
+      about_us5: "La douleur condamnera au plaisir"
+      about_us6: "Emploi du district scolaire seulement"
+      about_us7: "Ceux qui ont soif de noirs ne voient pas, ils sont fautifs d'avoir abandonné leurs services"
+      nav_bar_home: "Accueil"
+      nav_bar_logout: "Se déconnecter"

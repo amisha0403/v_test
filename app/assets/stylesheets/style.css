@@ -695,6 +695,12 @@ section {
   margin-top: -25px;
 }
 
+.new_class{
+  float: right;
+  margin-right: 190px;
+  margin-top: -25px;
+}
+
 .image_box{
   border: 1px solid #ddd;
   border-radius: 4px;

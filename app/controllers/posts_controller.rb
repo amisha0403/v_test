@@ -32,7 +32,6 @@ class PostsController < ApplicationController
   end
 
 	def update
-		debugger
 	 	if @post && @post.update(post_params)
 	 		redirect_to posts_path
 	 	else

@@ -134,7 +134,7 @@ GEM
       method_source (~> 1.0)
     public_suffix (4.0.6)
     puma (3.12.6)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -245,6 +245,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2)
   rails-i18n
+  rake
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

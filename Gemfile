@@ -25,6 +25,7 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'pg'
 gem 'carrierwave', '~> 2.0'
+gem 'rake'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

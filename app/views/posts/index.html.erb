@@ -9,8 +9,6 @@
           <th scope="col">ID</th>
           <th scope="col">Title</th>
           <th scope="col">Description</th>
-          <th scope="col">Category</th>
-          <th scope="col">Image</th>
           <th colspan = "4">Action</th>
         </tr>
       </thead>
@@ -19,9 +17,7 @@
         <tr>
           <td><%= post.id %></td>
           <td><%= post.title %></td>
-          <td><%= post.description %></td>
-          <td><%= post.category %></td>
-          <td><%= image_tag post.image.url, class: 'image_box' %></td>
+          <td><%= post.description %></td>          
           <td><%= link_to 'show', post_path(post), :class => "btn btn-info btn-sm" %></td>
           <td><%= link_to 'edit', edit_post_path(post), :class => "btn btn-primary btn-sm" %></td>
           <td><%= link_to 'delete', post_path(post), method: :delete, :class => "btn btn-danger btn-sm", data: { confirm: 'Are you sure?' } %></td>

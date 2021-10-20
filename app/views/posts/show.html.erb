@@ -16,7 +16,9 @@
         </div> 
 
         <div class="form-group input-group">
-          Image - <%= image_tag @post.image.url, class: 'image_box' %>
+          <% if @post.image_url %>
+            Image - <%= image_tag @post.image.url, class: 'image_box' %>
+          <% end %>
         </div> 
 
         <div class="form-group">

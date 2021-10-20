@@ -10,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
   <link rel="icon" href="Favicon.png">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
 </head>
 <body>
 
@@ -26,11 +25,20 @@
             <% end %>
           </div>
           <div class="card-body">
-            <%= form_for @post do |f| %>
+            <%= form_for @task do |f| %>
+
               <div class="form-group row">
-                <%= f.label :title, class: "col-md-4 col-form-label text-md-right" %>
+                <%= f.label :project_id, class: "col-md-4 col-form-label text-md-right" %>
                 <div class="col-md-6">
-                  <%= f.text_field :title, autofocus: true, class: "form-control" %>
+                  <%= f.select(:project_id, @projects.collect {|p| [ p.name ,p.id ]},{ include_blank: 'Select One' }, 
+                  required: true, class: "form-control")%>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <%= f.label :name, class: "col-md-4 col-form-label text-md-right" %>
+                <div class="col-md-6">
+                  <%= f.text_field :name, autofocus: true, class: "form-control" %>
                 </div>
               </div>
 
@@ -42,9 +50,23 @@
               </div>
 
               <div class="form-group row">
-                <%= f.label :category, class: "col-md-4 col-form-label text-md-right" %>
+                <%= f.label :start_time, class: "col-md-4 col-form-label text-md-right" %>
                 <div class="col-md-6">
-                  <%= f.select :category, options_for_select([["Select One", ""], "Education", "Business", "Teaching"])%>
+                  <%= f.time_select :start_time, autofocus: true, class: "form-control" %>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <%= f.label :end_time, class: "col-md-4 col-form-label text-md-right" %>
+                <div class="col-md-6">
+                  <%= f.time_select :end_time, autofocus: true, class: "form-control" %>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <%= f.label :status, class: "col-md-4 col-form-label text-md-right" %>
+                <div class="col-md-6">
+                  <%= f.select :status, options_for_select([["Select One", ""], "Started", "InProgress", "Done"])%>
                 </div>
               </div>
 
@@ -57,7 +79,7 @@
 
               <div class="col-md-6 offset-md-4">
                 <%= f.submit "submit", :class => "btn btn-primary" %>
-                <%= link_to 'Back', welcome_index_path, :class => "btn btn-primary btn-md link_to_button" %>
+                <%= link_to 'Back', tasks_path, :class => "btn btn-primary btn-md link_to_button" %>
               </div>
             <%end%>
           </div>
@@ -73,3 +95,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+    

@@ -14,10 +14,10 @@
           <%= @task.description %><br>
         
           <label for="description" class="col-md-4 col-form-label text-md-right">Start Time -</label>
-          <%= @task.start_time %><br>
+          <%= @task.start_time.strftime('%d-%m-%Y %H:%M') %><br>
 
           <label for="description" class="col-md-4 col-form-label text-md-right">End Time -</label>
-          <%= @task.end_time %><br>
+          <%= @task.end_time.strftime('%d-%m-%Y %H:%M') %><br>
         
           <label for="image" class="col-md-4 col-form-label text-md-right">Status</label>
           <%= @task.status %><br><br>

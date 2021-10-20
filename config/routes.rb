@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :welcome, only: [:index]
   resources :users
   resources :posts
+  resources :projects
+  resources :tasks
 end

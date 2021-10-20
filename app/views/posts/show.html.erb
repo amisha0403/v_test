@@ -1,28 +1,30 @@
-<div class="cotainer">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-body">
-          <label for="title" class="col-md-4 col-form-label text-md-right">Title - </label>
-          <%= @post.title %><br>
+<div class="container">
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <h4 class="card-title mt-3 text-center">Post</h4>
       
-          <label for="category" class="col-md-4 col-form-label text-md-right">Category -</label>
-          <%= @post.category %><br>
-        
-          <label for="description" class="col-md-4 col-form-label text-md-right">Description -</label>
-          <%= @post.description%><br>
-        
-          <label for="image" class="col-md-4 col-form-label text-md-right">Image</label>
-          <%= image_tag @post.image.url, class: 'image_box' %><br><br>
-              
-          <div class="col-md-6 offset-md-4">
-            <%= link_to 'Edit', edit_post_path(@post), :class => "btn btn-primary btn-md link_to_button" %>
-            <%= link_to 'Back', posts_path, :class => "btn btn-primary btn-md link_to_button" %>
-          </div>
-
+        <div class="form-group input-group">
+          Title - <%= @project.title %>
         </div>
-      </div>
-    </div>
+
+        <div class="form-group input-group">
+          Category - <%= @project.category %>
+        </div> 
+
+        <div class="form-group input-group">
+          Description - <%= @project.description %>
+        </div> 
+
+        <div class="form-group input-group">
+          Image - <%= image_tag @post.image.url, class: 'image_box' %>
+        </div> 
+
+        <div class="form-group">
+          <%= link_to 'Edit', edit_post_path(@post), :class => "btn btn-primary btn-md link_to_button" %>
+          <%= link_to 'Back', posts_path, :class => "btn btn-primary btn-md link_to_button" %>
+        </div>       
+      
+    </article>
   </div>
 </div>
 <%= render 'layouts/footer'%>

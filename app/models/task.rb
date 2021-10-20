@@ -4,5 +4,5 @@ class Task < ApplicationRecord
 
 	mount_uploader :image, AvatarUploader
 
-	validates_length_of :description, minimum: 20, allow3blank: true
+	validates_length_of :description, minimum: 2, allow3blank: true
 end

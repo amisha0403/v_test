@@ -5,5 +5,5 @@ class Post < ApplicationRecord
 	enum category: [:Education, :Business, :Teaching]
 	
 	validates :title, :description, presence: true
-  validates_length_of :description, minimum: 20, allow_blank: true
+  validates_length_of :description, minimum: 2, allow_blank: true
 end
